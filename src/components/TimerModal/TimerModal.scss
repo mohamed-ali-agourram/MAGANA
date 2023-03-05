@@ -1,0 +1,71 @@
+.modal{
+	z-index: 2;
+	position: absolute;
+	top: 25%;
+	left: 35%;
+	width: 30%;
+	background: white;
+	color: black;
+	font-size: 1.6rem;
+	display: flex;
+	justify-content: center;
+	form{
+		display: flex;
+		flex-direction: column;
+		gap: 5vh;
+		button{
+			padding: 2vh;
+			font-weight: bold;
+			font-size: 1.2rem;
+			width: 5vw;
+		}
+		button:hover{
+			background: #80808075;
+		}
+	}
+}
+.nInput{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inputs{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	label{
+		width: 100%;
+	    display: flex;
+	    gap: 5vw;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	input{
+		width: 8vh;
+		border: none;
+		text-align: center;
+		height: 7.2vh;
+		padding: 1vh;
+		font-size: x-large;
+	}
+}
+.start{
+	border-radius: 10px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.start:hover{
+	background: #80808075;
+}
+@media screen and (max-width: 786px) {
+	.inputs input {
+	    height: 7.8vh !important;
+	    font-size: unset !important;
+	}
+}
+@media screen and (max-width: $bpM1) {
+	.times li {
+        font-size: 15px !important;
+    }
+}

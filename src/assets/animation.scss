@@ -1,0 +1,79 @@
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        top: 0%;
+    }
+    100% {
+        opacity: 1;
+        top: 25%;
+     }
+}
+
+.fadeIn{
+    animation: fadeInAnimation ease .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        top: 0%;
+    }
+    100% {
+        opacity: 1;
+        top: 25%;
+     }
+}
+
+@keyframes openAnimation {
+    0% {
+        margin-top: -70%;
+        display: inherit;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+@keyframes closeAnimation {
+    0% {
+        margin-top: 0%;
+    }
+    100%{
+        margin-top: -70%;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 456px){
+    nav ul {
+        display: none;
+    }
+    .zone-btn button {
+        font-size: 1.2rem !important;
+    }
+    .openedMenu{
+        animation: openAnimation .5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .closedMenu{
+        animation: closeAnimation .5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .timer p {
+        font-size: 5rem !important;
+    }
+}
+@media screen and (max-width: 320px){
+    .sidebar aside {
+        width: 90% !important;
+    }
+    .timer p {
+        font-size: 4.3rem !important;
+    }
+}

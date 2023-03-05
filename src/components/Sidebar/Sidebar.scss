@@ -1,0 +1,91 @@
+.sidebar{
+	display: flex;
+	gap: 8vh;
+	flex-basis: 25%;
+	justify-content: center;
+
+}
+.sidebar aside{
+	background: rgb(17 17 17 / 65%);
+	width: 40%;
+	color: white;
+	font-size: 22px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 2vh;
+	margin-top: 8vh;
+    border-radius: 15px;
+	p{
+		text-align: center;
+		padding: 7px;
+		button{
+			margin-right: 10px;
+			color: white;
+			background: transparent;
+			border: none;
+		}
+	}
+}
+
+.times{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+    max-height: 28vh;
+	overflow: auto;
+	padding: 3px;
+	li{
+		position: relative;
+		font-size: 18px;
+		color: #5656ff;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.fr{
+	color:white
+}
+.nb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+.removeElem{
+	background: transparent;
+	color: white;
+	border: none;
+	font-size: 1.8rem;
+	font-weight: bold;
+	cursor: pointer;
+	padding-top: 8px;
+}
+
+@media screen and (max-width: $bpD3) {
+	.sidebar aside {
+		width: 70% !important;
+	}
+}
+
+@media screen and (max-width: $bpT1) {
+	.removeElem {
+	    font-size: 1.4rem;
+	}
+}
+
+
+@media screen and (max-width: $bpM1) {
+	.sidebar aside {
+		width: 90% !important;
+	}
+}
+@media screen and (max-width: 337px) {
+	.sidebar aside {
+		width: 95% !important;
+	}
+}

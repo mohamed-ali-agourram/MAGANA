@@ -1,0 +1,141 @@
+nav{
+	height: 8vh;
+	padding: 2vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.logo{
+		font-size: 2rem;
+		background: transparent !important;
+	}
+	ul{
+		list-style-type: none;
+		width: 35%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+}
+.mobile{
+	display: none;
+}
+.nav-icon{
+	color: #ff9500;
+	font-size: 1.7rem;
+	cursor: pointer;
+}
+.closeBtn{
+		display: none;
+    position: absolute;
+    right: 3vw;
+    top: 3vh;
+}
+@media screen and (max-width: $bpD1) {
+  nav ul {
+    width: 45%;
+  }
+}
+@media screen and (max-width: $bpD2) {
+  nav ul {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: $bpT1) {
+  nav ul{
+  	font-size: .95rem;
+  }
+  .btns {
+  	button{
+	  	font-size: 1.4rem !important;
+	    padding: 1.3vh !important;
+	  	}
+	}
+}
+
+@media screen and (max-width: 565px){
+	.closeBtn{
+		display: inherit;
+	}
+	.btns button {
+	    margin-top: 1vh;
+	    font-size: 1.4rem !important;
+	}
+
+	nav ul{
+		z-index: 2;
+		flex-direction: column;
+		position: fixed;
+		left: 0px;
+		width: 100%;
+		gap: 16px;
+		background: rgb(255 255 255 / 84%);
+		padding: 3vh;
+		height: 100%;
+		font-size: 250%;
+		a{
+			color: black !important;
+		}
+	}
+	.active{
+		background: transparent !important;
+	}
+	.nav-icon{
+		display: none !important;
+	}
+	.mobile{
+		display: inherit;
+    height: 100%;
+    width: 19%;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+	.dark{
+		.mobile{color: red !important;}
+	}
+	.light{
+		.mobile{color: #ff9500 !important;}
+		nav ul{
+			background: rgb(0 0 0 / 94%)
+		}
+	}
+	.timer p {
+		font-size: 6rem !important;
+	}
+	.time ul li{
+		width: 47.5% !important;
+	}
+	.time ul li section p {
+    font-size: 1rem !important;
+	}
+	.time ul li section .city {
+    font-size: 1rem !important;
+	}
+	.time ul li section {
+    padding: 3vh !important;
+	}
+
+
+}
+@media screen and (max-width: 375px){
+	nav ul
+	{
+		font-size: 180%;
+	}
+	.timer p {
+	    font-size: 5rem !important;
+	}
+}
+@media screen and (max-width: $bpM3){
+	.timer p {
+	    font-size: 4.5rem !important;
+	}
+	.mobile{
+		width: 25% !important;
+	}
+
+}

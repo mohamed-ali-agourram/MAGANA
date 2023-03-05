@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@1,300&family=Orbitron:wght@500&display=swap');
+$mainColor: black;
+$scndColor: #111111;
+$pc: #100d12;
+$sc1: orange;
+$sc2: skyblue;
+
+/*BreakPoints*/
+$bpD1: 1200px;
+$bpD2: 1056px;
+$bpD3: 905px;
+$bpT1: 786px;
+$bpM1: 456px;
+$bpM2: 375px;
+$bpM3: 320px;
+.app{
+	min-height: 100vh;
+	height: fit-content;
+}
+body{
+	overflow-x: hidden;
+}
+button{
+	border: none;
+	cursor: pointer;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul, li {
+     list-style: none !important;
+}
+
+hr{
+	background: white;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.bar{
+	position: absolute;
+	top: 0;
+}
+::-webkit-scrollbar {
+	background: transparent;
+	width: 10px;
+}
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }

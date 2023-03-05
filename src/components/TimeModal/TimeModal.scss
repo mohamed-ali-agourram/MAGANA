@@ -1,0 +1,43 @@
+.modal{
+    position: absolute;
+    top: 30%;
+    left: 22.5%;
+    width: 55%;
+    color: white;
+    height: fit-content;
+    padding: 5vh;
+    background: #edededcc;
+    border-radius: 12px;
+    color: black;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	select{
+	    width: 250px;
+	    padding: 1vh;
+	    font-size: 16px;
+	    font-weight: bold;
+        border-radius: 10px;
+        border: black 3px solid;
+	}
+    form{
+        button{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $bpT1) {
+    .modal {
+        left: 30% !important;
+        width: 40% !important;
+        font-size: 1.2rem !important;
+    }
+}
+@media screen and (max-width: $bpM1){
+    .modal {
+        left: 8.5% !important;
+        width: 84% !important;
+    }
+}

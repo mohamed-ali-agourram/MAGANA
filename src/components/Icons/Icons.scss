@@ -1,0 +1,44 @@
+.icons{
+	position: absolute;
+	top: 8vh;
+	right: 3vh;
+	color: black;
+	display: flex;
+	gap: 10px;
+	button{
+		border: none;
+		background: transparent;
+		padding: 2vh;
+		color: #ff9500;
+		font-size: 2rem;
+	}
+}
+.location-icon{
+	position: absolute;
+	top: 8vh;
+	right: 3vh;
+	color: black;
+	display: flex;
+	gap: 10px;
+	button{
+		border: none;
+		background: transparent;
+		padding: 2vh;
+		color: #ff9500;
+		font-size: 2rem;
+	}	
+}
+
+@media screen and (max-width: $bpT1)
+{
+	.icons button {
+	    font-size: 1.6rem !important;
+	}
+}
+
+@media screen and (max-width: $bpM1)
+{
+	.icons{
+		display: none !important;
+	}
+}
