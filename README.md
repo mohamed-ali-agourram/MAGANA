@@ -1,2 +1,1 @@
-# MAGANA
-I am a fullstack developer who is passionate about creating intuitive and easy-to-use countdown timers for your projects. My app is designed to help you keep track of time and stay organized, whether you're planning a big event or just trying to stay on top of your daily tasks. With a range of customization options and a clean, modern interface, my countdown timer is the perfect tool for anyone looking to add a little bit of structure and organization to their day. Thank you for choosing 
+# magana
